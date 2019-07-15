@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transformación Punto de Origen</title>
+    <style>
+    body {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 100vh;
+        color: white;
+        font-family: Arial;
+    }
+    .container {
+        border: 1px solid red;
+        height: 240px;
+    }
+    .cuadrado {
+        width: 200px;
+        height: 200px;
+        background: #7dc900;
+        margin: 20px;
+        transition: .5s;
+    }
+    .container:hover .cuadrado {
+        /* transform-origin: x y; */
+        /* transform-origin: 50% 50%; */
+        /* transform-origin: top; */
+        /* transform-origin: bottom; */
+        /* transform-origin: left; */
+        /* transform-origin: right; */
+        /* transform-origin: left top; */
+        /* transform-origin: right top; */
+        transform-origin: 72% 40%;
+        transform: rotateZ(-45deg);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrado">
+
+        </div>
+    </div>
+</body>
+</html>

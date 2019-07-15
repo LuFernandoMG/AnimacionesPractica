@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transformación Translación</title>
+    <style>
+    body {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 100vh;
+        color: white;
+        font-family: Arial;
+        /* perspective-origin: x y; */
+        /* perspective-origin: left; */
+        /* perspective-origin: right; */
+        /* perspective-origin: top; */
+        /* perspective-origin: bottom; */
+        /* perspective-origin: bottom left; */
+        /* perspective-origin: top right; */
+        /* perspective-origin: right top; */
+    }
+    .container {
+        border: 1px solid red;
+        height: 240px;
+        perspective: 200px;
+        perspective-origin: center;
+        transform-style: preserve-3d;
+    }
+    .cuadrado {
+        width: 200px;
+        height: 200px;
+        background: #7dc900;
+        margin: 20px;
+        transition: .5s;
+    }
+    .container:hover .cuadrado {
+       /* transform: translate(x positivos a la derecha, negativos a la izquierda); */
+       /* transform: translate(100px); */
+       /* transform: translate(y positivos hacia abajo, negativos hacia arriba); */
+       /* transform: translate(0, 100px); */
+       /* transform: translateX(100px); directamente trabajando con el eje X */
+       /* transform: translateY(100px); directamente trabajando en el eje Y */
+       /* transform: translateZ(20px); translación en el eje Z, se debe determinar la perspectiva(perspective), el punto de fuga(perspective-origin) y el estilo de la transformación en FireFox (transform-style: preserve-3d)  */
+        /* transform: translateZ(100px); */
+        /* transform: translate3d(x, y, z); */
+        transform: translate3d(100px, 100px, 100px);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cuadrado">
+
+        </div>
+    </div>
+</body>
+</html>
